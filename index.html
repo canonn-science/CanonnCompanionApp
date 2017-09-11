@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Companion Application</title>
+  </head>
+  <style>
+    #uinotice div.item{
+      width:32px;
+      height:32px; 
+      border:1px solid #263238;
+      border-left:transparent;
+      float:left;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 32px;
+      font-weight:bold;
+    }
+
+    #uinotice div.icon{
+      border-left: 1px solid #263238;
+      -webkit-app-region: drag;
+    }
+
+
+  </style>
+  <body>
+    <div id="uinotice" >
+      <div class="item icon" style="background-color: #37474f;">
+          <img src="canonn-logo.png">
+      </div>
+      <div class="item" style="background-color: #80cbc4;" onclick="javascript:alert('item 1 clicked');">
+          9+
+      </div>
+      <div class="item" style="background-color: #69aaf0;" onclick="javascript:alert('item 2 clicked');">
+          3
+      </div>
+      <div class="item" style="background-color: #9ea8ad;" onclick="javascript:alert('item 3 clicked');">
+          2
+      </div>
+    </div>
+    
+  </body>
+
+  <script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+  </script>
+</html>
